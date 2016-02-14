@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href ="style.css"/>
+<script type="text/javascript" src="jquery-2.1.js"></script>
+<script>
+$(document).ready(function () {
+    var $tabs = $('.tabbable li');
+
+    $('#prevtab').attr("disabled", true);
+
+    $('#prevtab').on('click', function () {
+    if($tabs.filter('.active').prev('li').length==0)
+    { 
+      $(this).attr("disabled",true);
+     }
+    $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
+
+});
+
+    $('#nexttab').on('click', function () {
+    $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+    $('#prevtab').prop("disabled",false);
+});
+
+});
+</script>
+</head>
+<body>
+<div class="tabbable">
+
+  <ul class="nav nav-tabs" id="tab_bar">
+    <li class="active"><a href="#tab1" data-toggle="tab">Step 1</a></li>
+    <li><a href="#tab2" data-toggle="tab">Step 2</a></li>
+  </ul>
+
+  <div class="tab-content" >
+    <div class="tab-pane fade active in" id="tab1">
+      <div class="row">
+        <div class="content">
+          Some text here
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="tab2">
+      Some text here
+    </div>
+  </div>
+  <button class="btn" id="prevtab" type="button">Back</button>
+  <button class="btn" id="nexttab" type="button">Next</button>
+</body>
+</html>

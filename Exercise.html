@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href ="style.css"/>
+<script type="text/javascript" src="jquery-2.1.js"></script>
+		<script>
+		$(document).ready(function(){
+		$("#we").click(function(){
+		$("#we_Cont").fadeIn(3000).show();
+		$("#se_Cont").hide();
+		$("#sw_Cont").hide();
+		$("#pr_Cont").hide();
+		$("#is_Cont").hide();
+		$("#it_Cont").hide();
+		$("#w3sImg").slideDown(3000);
+		$("#seImg").hide();
+		$("#swImg").hide();
+		$("#prImg").hide();
+		$("#itImg").hide();
+		var div=$("#right");
+		div.animate({height:'800px'},"slow");
+		});
+
+		$("#se").click(function(){
+		$("#we_Cont").hide();
+		$("#se_Cont").fadeIn(3000).show();
+		$("#sw_Cont").hide();
+		$("#pr_Cont").hide();
+		$("#is_Cont").hide();
+		$("#it_Cont").hide();
+		$("#w3sImg").hide();
+		$("#swImg").hide();
+		$("#prImg").hide();
+		$("#itImg").hide();
+		$("#seImg").slideDown(3000);
+		var div=$("#right");
+		div.animate({height:'300px'},"slow");
+		});
+
+		$("#sw").click(function(){
+		$("#we_Cont").hide();
+		$("#se_Cont").hide();
+		$("#sw_Cont").fadeIn(3000).show();
+		$("#pr_Cont").hide();
+		$("#is_Cont").hide();
+		$("#it_Cont").hide();
+		$("#swImg").slideDown(3000);
+		$("#seImg").hide();
+		$("#w3sImg").hide();
+		$("#prImg").hide();
+		$("#itImg").hide();
+		var div=$("#right");
+		div.animate({height:'300px'},"slow");
+		});
+
+		$("#pr").click(function(){
+		$("#we_Cont").hide();
+		$("#se_Cont").hide();
+		$("#sw_Cont").hide();
+		$("#pr_Cont").fadeIn(3000).show();
+		$("#is_Cont").hide();
+		$("#it_Cont").hide();
+		$("#prImg").slideDown(3000);
+		$("#seImg").hide();
+		$("#swImg").hide();
+		$("#w3sImg").hide();
+		$("#itImg").hide();
+		var div=$("#right");
+		div.animate({height:'300px'},"slow");
+		});
+
+		$("#is").click(function(){
+		$("#we_Cont").hide();
+		$("#se_Cont").hide();
+		$("#sw_Cont").hide();
+		$("#pr_Cont").hide();
+		$("#it_Cont").hide();
+		$("#is_Cont").fadeIn(3000).show();
+		$("#seImg").hide();
+		$("#swImg").hide();
+		$("#prImg").hide();
+		$("#w3sImg").hide();
+		$("#itImg").hide();
+		var div=$("#right");
+		div.animate({height:'300px'},"slow");
+		});
+		$("#itM").click(function(){
+		$("#we_Cont").hide();
+		$("#se_Cont").hide();
+		$("#sw_Cont").hide();
+		$("#it_Cont").fadeIn(3000).show();
+		$("#is_Cont").hide();
+		$("#pr_Cont").hide();
+		$("#itImg").slideDown(3000);
+		$("#seImg").hide();
+		$("#swImg").hide();
+		$("#w3sImg").hide();
+		var div=$("#right");
+		div.animate({height:'300px'},"slow");
+		});
+		});
+		</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		</nav>
+		<div id="container">
+			<div id="sun"></div>
+			<div id="cloudcontain">
+			<div id="cloud1" style= position:absolute;margin-top:0px;margin-left:70px;></div>
+			<div id="cloud2" style= float:left;margin-left:120px;margin-top:-50px;></div>
+			<div id="cloud3" style= float:left;margin-left:-80px;margin-top:-20px;></div>
+
+			<div id="cloud1" style= position:absolute;margin-top:-40px;margin-left:450px;></div>
+			<div id="cloud2" style= float:left;margin-left:380px;margin-top:-140px;></div>
+			<div id="cloud3" style= float:left;margin-left:340px;margin-top:-100px;></div>
+			</div>
+			<div id = "title">
+			<pre><h1 id="firsttext"><b> <span>Welcome</span><span> To </span><span>Our</span><span> amazing</span><span> Website </span><span>!!</span></h1></pre>
+			</div>
+			<div id="secondtext">
+			<pre><h2><span>Feel</span><span> free</span><span> to</span><span> contact </span><span>us .</span></h2></div>
+			</pre>
+		</div>
+
+		<div id="left">
+			<div id="subject" style="font-size:15px; padding:10px;">Software Engineering department subjects(5th semester)</div>
+			<button id="we" style="width:250px;height:30px;background-color:rgb(52,93,166);color:white;border-radius:10px;">Web Engineering</button><br>
+			<button id="se" style="width:250px;height:30px;background-color:rgb(52,93,166);color:white;border-radius:10px;">Software Engineering</button><br>
+			<button id="sw" style="width:250px;height:30px;background-color:rgb(52,93,166);color:white;border-radius:10px;">Scientific Writting</button><br>
+			<button id="pr" style="width:250px;height:30px;background-color:rgb(52,93,166);color:white;border-radius:10px;">Probability</button><br>
+			<button id="is" style="width:250px;height:30px;background-color:rgb(52,93,166);color:white;border-radius:10px;">Islamic</button><br>
+			<button id="itM" style="width:250px;height:30px;background-color:rgb(52,93,166);color:white;border-radius:10px;">IT Management</button><br>
+			
+			<div id="w3sImg" style="padding:50px;">
+				<img src="w3School.jpg" width="340px" height="350px">
+			</div>
+			<div id="seImg" style="padding:50px;" hidden>
+				<img src="SoftwareEng.jpg" width="340px" height="350px">
+			</div>
+			<div id="swImg" style="padding:50px;" hidden>
+				<img src="ScientificW.jpg" width="340px" height="350px">
+			</div>
+			<div id="prImg" style="padding:50px;" hidden>
+				<img src="prob.jpg" width="340px" height="350px">
+			</div>
+			<div id="itImg" style="padding:50px;" hidden>
+				<img src="ITMange.jpg" width="340px" height="350px">
+			</div>
+		</div>
+		<div id="right">
+			<div id="we_Cont">
+				<h1 style="text-align:center;font-size:25px;">((Web Engineering))</h1>
+				<p style="margin:15px;">This subject is taught by Mr.abdul Rezzaq Hamraz with Miss.Ghazzale Zaheer . This subject helps students  to design web pages professionally from view of structure and style. The students by learning this subject should consider these issues to develop a professional products. They must be able to develop web sites with these qualities:
+					<ol>
+						<li>Correctness</li>
+						<li>Maintainability</li>
+						<li>Efficiency</li>
+						<li> Usability</li>
+						<li>Reusability</li>
+					</ol>
+					</p>
+					<p style="margin:15px;">To develop a product with high quality the should consider these steps:
+					<dl> 
+					<dt>Information Gathering:</dt>
+					<dd>-what business goals and dreams are,what are their target audience, and how the web can be utilized to help achieve those goals.</dd>
+					</dl>
+					<dl> 
+					<dt>Planning:</dt>
+					<dd>Using the information gathered from Phase one, it is time to put together a plan for your web site.</dd>
+					</dl>
+					
+					<dl> 
+					<dt>Design:</dt>
+					<dd>The design stage typically involves moving the information outlined in the planning stage further into reality. It is time to determine the look and feel of your site.</dd>
+					</dl>
+					
+					<dl> 
+					<dt>Development:</dt>
+					<dd>The developmental stage is the point where the web site itself is created.</dd>
+					</dl>
+					
+					<dl> 
+					<dt>Testing and Delivery:</dt>
+					<dd>Testing is the process of running a system with the intention of finding errors.</dd>
+					</dl>
+					
+					<dl> 
+					<dt>Maintenance:</dt>
+					<dd>Maintenance begins when the system is released and continues for the life of the system.</dd>
+					</dl>
+				</p>
+			</div>
+			<div id="se_Cont" hidden>
+				<h1 style="text-align:center;font-size:25px;">((Software Engineering))</h1>
+				<p style="margin:15px;">This subject is taught by Mr.Mahmood Asgharzada for software engineering department students which has five credits. The main concept of this subject is to learn students of this department to develop software products efficiently with high quality.</p>
+			</div>
+			<div id="sw_Cont" hidden>
+				<h1 style="text-align:center;font-size:25px;">((Scientific Writting))</h1>
+				<p style="margin:15px;">This subject is taught by Mrs.Parigul Nabizade which has three credits.The main concept of this subject is to learn students to write scientifically. students should write a problem scintifically and make a research paper to get 40 scores from this subject.</p>
+			</div>
+			<div id="pr_Cont" hidden>
+				<h1 style="text-align:center;font-size:25px;">((Probability))</h1>
+				<p style="margin:15px;">This subject is taught by Mr.Amanullah Faqiri who is from Engineering faculty.This has five credits.The main concept of this subject is to learn students to be able to evaluate future problems , condition , advantages , disadvantages and so on.Students have to make project for this subject in order to practice probability issues. </p></div>
+			<div id="is_Cont" hidden>
+				<h1 style="text-align:center;font-size:25px;">((Islamic))</h1>
+				<p style="margin:15px;">This subject is taught by Mr.Haqqani who is from Seqafat department of Shareiat faculty. 
+				This subject has one credit.The main concept of this subject is to learn students about islamic issues.</p></div>
+				
+			<div id="it_Cont" hidden>
+				<h1 style="text-align:center;font-size:25px;">((IT Management))</h1>
+				<p style="margin:15px;">This subject is taught by Mr.Hamid Rahman Mohmand who is the dean of Computer Science faculty. This subject has two credits.The main concept of this subject is to learn students to be able to manage IT projects efficiently and with high quality.</p></div>
+		</div>
+	</div>
+	</body>
+	<footer style="position:absolute ;top:1290px;font-size:20px;font-family:Arial (Body CS);">Azita Azimi : ID:20895. Please run with Chrome!!</footer>
+</html>
